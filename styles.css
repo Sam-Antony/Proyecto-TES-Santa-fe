@@ -1,0 +1,375 @@
+/* Global */
+html{
+    font-size: 62.5%; /*reset rems = 16 px 62.5% = 10px */
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit; /*esto para arreglar el width con el padding*/
+}                     /* rem >>>>>>> px */  
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    background-color: #202022;
+    color: #CACACA;
+}
+*{
+    margin: 0;
+}
+/* Global */
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /* 1200px*/
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+    color: #CACACA;
+}
+p{
+    color: #CACACA;
+    font-size: 1.8rem;
+}
+h1{
+    font-size:3.7rem ;
+    margin: 0.67em 0;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 2.7rem;
+    color: #00BBC9;
+    margin: 0.67em 0;
+}
+
+h4{
+    font-size: 2.6rem;
+    margin: 0.67em 0;
+}
+
+/* utilidades */
+
+.seccion {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.fw300{
+    font-weight: 300;
+}
+.fw400{
+    font-weight: 400;
+}
+.fw700{
+    font-weight: 700;
+}
+.fw900{
+    font-weight: 900;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+d-block {
+    display: block !important;
+}
+/*botones*/
+.boton{
+    display: block;
+    flex: 0 0 100%;
+    border: none;
+    color: #CACACA;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-azul{
+    background: #00abb7;
+
+}
+
+.boton-verde{
+    background: #84B026;
+
+}
+/*Header*/
+.site-header{
+    padding: 1rem 0 3rem 0 ;
+}
+
+.site-header h1{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.site-header.inicio{
+    background: url(img/portada.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1 span{
+    color: #00BBC9;
+}
+.contenido-header h2 {
+    color: #CACACA;
+    padding-bottom:2rem ;
+    max-width: 60rem;
+}
+
+@media (min-width: 768px){
+    .contenido-header{
+        text-align: left;
+    }
+}
+
+.barra {
+    padding-top:1rem;
+}
+
+.bar{
+    background-color: #2a2a2d;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+    }
+}
+
+/* Nav */
+.navegacion a {
+    color: #CACACA;
+    font-size: 2.2rem; /* 18px*/
+    text-decoration: none;
+    display: block;
+    
+}
+@media (min-width: 768px) {
+    .navegacion a{
+        display: inline-block;
+        margin-right: 1.8rem;
+        transition: 0.1s linear;
+        font-size: 2.3rem;
+    }
+    .navegacion a :last-of-type{
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #00BBC9;
+}
+/**Mobile Menu**/
+.mobile-menu img{
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+}
+.navegacion:target{
+    display: block;
+}
+.navegacion{
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion{
+    display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .space-B {
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+
+@media (min-width: 768px) {
+    .space-E {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.p-space-B{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .p-space-B{
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.p-nosotros h3 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .contenedor-instituto{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px){
+    .instituto{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.instituto img{
+    height: 300px;
+    object-fit: cover; 
+}
+.instituto{
+    border: 1px solid #878787;
+    background: #2a2a2d;
+    margin-bottom: 2rem;
+}
+
+.contenido-insti{
+    padding: 3rem;
+}
+
+
+.ver-todo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-footer{
+    background-color: #2a2a2d;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    }
+
+    .contenedor-footer{
+        padding: 3rem 0;
+        text-align: center;
+    }
+    .site-footer nav{
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .site-footer nav{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .site-footer na{
+            display: block;
+        }
+    }
+
+/* Institutooo*/
+.full-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    width: 160vh;
+
+}
+
+.indice{
+    margin: 3rem 0;
+}
+
+li a{
+    font-size: 2rem;
+    color: #00abb7;
+}
+
+.space-B h2{
+text-align: center;
+}
+
+.space-B p {
+    margin: 0 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre imágenes */
+    max-width: 100%;
+}
+
+.gallery img {
+    max-width: 48%;
+    height: auto;
+    flex-grow: 1;
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+}
+/* NOSOTROSSSSS*/
+.imagen{
+    flex-basis: 40%;
+}
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
+    }   
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

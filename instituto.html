@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Proyecto Test</title>
+</head>
+
+<body>
+    <header class="site-header bar">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+    
+                <a href="index.html">
+                <h1>Proyecto <Span>Test</Span></h1>
+                </a>
+    
+                <nav id="navegacion" class="navegacion fw700">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="institutos.html">Institutos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="infoMain">
+        
+    </div>
+
+    <footer class="site-footer seccion">
+        
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion fw700" >
+                <a href="nosotros.html">Nosotros</a>
+                <a href="institutos.html">Institutos</a>
+            </nav>
+                <p>Todos los Derechos Reservados para los estudiantes del Instituto Gubernamental "SIR Salvador Moncada" 2024 © </p>
+        </div>
+    </footer>
+
+</body>
+<script>
+        window.onload = function() {
+    var params = new URLSearchParams(window.location.search);
+    var infoKey = params.get('info');
+    var infoSection = document.getElementById('infoMain');
+
+    var info1 = `
+<h1 class="centrar-texto">Instituto Gubernamental "SIR. Salvador Moncada"</h1>
+<img src="/img/roque_1.jpg" alt="Imagen del instituto" class="full-img"><br>
+<main class="seccion contenedor">
+  <h3>Santa Fe, barrio la Democracia</h3>
+  <h2 class="centrar-texto indice">Índice</h2>
+  <ul class="space-B">
+    <li><a href="#Smision" class="fw700">Visión y Misión</a></li>
+    <li><a href="#Shistoria" class="fw700">Historia</a></li>
+    <li><a href="#Sinfo" class="fw700">Acerca de Nosotros</a></li>
+  </ul>
+  <br><br>
+  <ul class="space-E">
+    <li><a href="#Smaestros" class="fw700">Maestros</a></li>
+    <li><a href="#Sgaleria" class="fw700">Galería</a></li>
+  </ul>
+
+  <section class="space-B seccion contenedor" id="SMision">
+    <div>
+      <h2>VISIÓN</h2>
+      <p>Dar respuestas académicas adecuadas integrando a los diferentes actores educativos para el desarrollo eficaz y eficiente del proceso enseñanza-aprendizaje, encaminados a la formación integral de los jóvenes, garantizando una educación congruente a su propio desarrollo, contribuyendo a una sociedad más justa y democrática; así como el establecimiento de un vínculo más estrecho y pertinente entre la vida ciudadana, el ámbito laboral y la educación.</p>
+    </div>
+    <div>
+      <h2>MISIÓN</h2>
+      <p>El Instituto Gubernamental SIR Salvador Moncada será una institución facilitadora de servicios educativos de calidad y jóvenes emprendedores con adquisición de los conocimientos, habilidades y destrezas en función del desarrollo de competencias, estimulando el desarrollo del pensamiento autónomo, la curiosidad, la creatividad, la inventiva, así como la innovación con la utilización del conocimiento científico y tecnológico, con soporte a los valores éticos y cívicos y del compromiso personal frente a la familia, la comunidad y la sociedad hondureña.</p>
+    </div>
+  </section>
+
+  <section class="seccion contenedor" id="SHistoria">
+    <h2 class="centrar-texto">Historia</h2>
+    <p>Inició sus labores en el año 2016, con el nombre de Instituto Gubernamental “P.M. Roque Humberto Polanco”, como una institución facilitadora de la educación media, en el municipio de Santa Fe.</p>
+    <br><br>
+    <p>A la fecha, ha egresado 4 promociones de Bachilleres Técnicos Profesionales en Informática.</p>
+    <br><br>
+    <p>Actualmente cuenta con un personal especializado en cada una de sus áreas de estudio que se imparten en la Carrera que el instituto ofrece, siendo esta la Modalidad de Bachillerato Técnico Profesional en Informática, y para el año 2025 se dará apertura a la Modalidad de Bachillerato en Ciencias y Humanidades.</p>
+    <br><br>
+  </section>
+
+  <section class="seccion contenedor" id="SInfo">
+    <h2 class="centrar-texto">Acerca de nosotros</h2>
+    <h3>Carrera de estudio</h3>
+    <h4>BTP-INFORMATICA</h4>
+    <p>
+      Duración de la carrera: Tres Años, Seis Semestres, Dieciocho Módulos. 
+      <br><br>
+      Perfil del Egresado: Adquiere conocimientos, habilidades, destrezas, actitudes y comportamientos integrados que constituyen el logro de las competencias específicas de la carrera. 
+      <br><br>
+      Habilidades: 
+      <br>· Interpreta Manuales y Documentación relacionada con la infraestructura tecnológica. 
+      <br>· Diseña planes de mantenimiento de la infraestructura tecnológica. 
+      <br>· Elabora y ejecuta planes de mantenimiento. 
+      <br>· Conoce y utiliza sistemas operativos y herramientas ofimáticas y tecnológicas de punta. 
+      <br>· Diseña sitios Web. 
+      <br><br>
+      Requisitos de Ingreso: 
+      <br>- Haber aprobado la Educación Básica 
+      <br>- Haber aprobado la formación de Fundamento, I Ciclo de la Educación Media 
+      <br><br>
+    </p>
+
+    <h3>Maestros</h3>
+    <div class="space-B contenedor">
+      <div class="p-space-B">
+        <h4>Ana Antonia Chinchilla</h4>
+        <p>Letras y Lenguas</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Wendi Liseth Aguilar</h4>
+        <p>Ciencias Sociales</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Heber Ulices Portillo</h4>
+        <p>Ciencias Matemáticas</p>
+      </div>
+    </div>
+
+    <div class="space-B contenedor">
+      <div>
+        <h4 class="p-space-B">Heidy Maria Dubon</h4>
+        <p>Ciencias Naturales</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Karol Nicolle Molina</h4>
+        <p>Licenciatura en Pedagogía</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Kenia Guadalupe Arita</h4>
+        <p>Ingeniera en Sistemas</p>
+      </div>
+    </div>
+
+    <h3>Num. director</h3>
+    <p>Lcda. Ana Antonia Chinchilla Cel: (504) 9888-0704 </p>
+  </section>
+
+  <section class="seccion contenedor" id="Sgaleria">
+    <h2 class="centrar-texto">Galería</h2>
+    <h3>Fotos de la Institución</h3>
+    <div class="contenedor gallery">
+      <img src="/img/roque_1.jpg" alt="">
+      <img src="img/roque_2.jpg" alt="">
+      <img src="img/roque_3.jpg" alt="">
+      <img src="img/roque_4.jpg" alt="">
+    </div>
+
+    <h3>Actividades realizadas</h3>
+    <div class="contenedor gallery">
+      <img src="/img/roqueA_1.jpg" alt="">
+      <img src="img/roqueA_2.jpg" alt="">
+      <img src="/img/roqueA_3.jpg" alt="">
+      <img src="/img/roqueA_4.jpg" alt="">
+      <img src="/img/roqueA_5.jpg" alt="">
+      <img src="/img/roqueA_6.jpg" alt="">
+      <img src="/img/roqueA_7.jpg" alt="">
+      <img src="/img/roqueA_8.jpg" alt="">
+      <img src="/img/roqueA_9.jpg" alt="">
+      <img src="/img/roqueA_10.jpg" alt="">
+      <img src="/img/roqueA_11.jpg" alt="">
+      <img src="/img/roqueA_12.jpg" alt="">
+      <img src="/img/roqueA_13.jpg" alt="">
+      <img src="/img/roqueA_14.jpg" alt="">
+      <img src="/img/roqueA_15.jpg" alt="">
+      <img src="/img/roqueA_16.jpg" alt="">
+    </div>
+  </section>
+</main>
+`;
+
+var info2 = `
+<h1 class="centrar-texto">Centro De Educación Básica "Lic. Enrique Villela"</h1><br>
+<img src="/img/enrique_1.jpg" alt="Imagen del centro educativo" class="full-img"><br>
+<main class="seccion contenedor">
+  <h3>Santa Fé, Calle P.M. Roque Humberto Polanco Deras</h3>
+  <h2 class="centrar-texto indice">Índice</h2>
+  <ul class="space-B">
+    <li><a href="#SMision" class="fw700">Visión y Misión</a></li>
+    <li><a href="#SHistoria" class="fw700">Historia</a></li>
+    <li><a href="#SInfo" class="fw700">Acerca de nosotros</a></li>
+  </ul>
+  <br><br>
+  <ul class="space-E">
+    <li><a href="#SMaestros" class="fw700">Maestros</a></li>
+    <li><a href="#SGaleria" class="fw700">Galería</a></li>
+  </ul>
+
+  <section class="space-B seccion contenedor" id="SMision">
+    <div>
+      <h2>VISIÓN</h2>
+      <p>Promover el aprendizaje integral y el desarrollo personal de los estudiantes, fomentando un ambiente educativo inclusivo y participativo, que les permita adquirir competencias necesarias para su futuro.</p>
+    </div>
+    <div>
+      <h2>MISIÓN</h2>
+      <p>El Centro de Educación Básica “Lic. Enrique Villela” se dedica a ofrecer educación de calidad, desarrollando en los estudiantes habilidades y actitudes que les permitan ser ciudadanos responsables y comprometidos con su comunidad.</p>
+    </div>
+  </section>
+
+  <section class="seccion contenedor" id="SHistoria">
+    <h2 class="centrar-texto">Historia</h2>
+    <p>El centro educativo inició sus labores en el año 2010, enfocándose en brindar una educación básica de calidad a los niños y niñas de la comunidad. Desde su apertura, ha trabajado para adaptarse a las necesidades educativas de sus estudiantes.</p>
+    <br><br>
+    <p>A lo largo de los años, el centro ha evolucionado y se ha modernizado, incorporando nuevas tecnologías y métodos pedagógicos que enriquecen el proceso de enseñanza-aprendizaje.</p>
+    <br><br>
+  </section>
+
+  <section class="seccion contenedor" id="SInfo">
+    <h2 class="centrar-texto">Acerca de nosotros</h2>
+    <h3>Carrera de estudio</h3>
+    <h4>Educación Básica</h4>
+    <p>
+      Duración de la educación: Seis Grados. 
+      <br><br>
+      Perfil del Egresado: Los estudiantes egresados del centro educativo tienen la capacidad de continuar su formación académica en niveles superiores, poseyendo habilidades básicas en matemáticas, lengua y ciencias. 
+      <br><br>
+      Habilidades: 
+      <br>· Resolución de problemas matemáticos básicos. 
+      <br>· Lectura y comprensión de textos. 
+      <br>· Aplicación de conceptos científicos en su entorno. 
+      <br>· Desarrollo de habilidades sociales y comunicativas.
+      <br><br>
+      Requisitos de Ingreso: 
+      <br>- Certificado de educación preescolar 
+      <br>- Cumplir con los requisitos de inscripción establecidos por la institución 
+      <br><br>
+    </p>
+
+    <h3>Maestros</h3>
+    <div class="space-B contenedor">
+      <div class="p-space-B">
+        <h4>María Fernanda Gómez</h4>
+        <p>Educación Inicial</p>
+      </div>
+      <div class="p-space-B">
+        <h4>José Manuel Hernández</h4>
+        <p>Matemáticas</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Lucía Torres</h4>
+        <p>Lengua y Literatura</p>
+      </div>
+    </div>
+
+    <div class="space-B contenedor">
+      <div>
+        <h4 class="p-space-B">Carlos Pérez</h4>
+        <p>Ciencias Naturales</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Andrea López</h4>
+        <p>Educación Física</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Sofía Martínez</h4>
+        <p>Arte y Cultura</p>
+      </div>
+    </div>
+
+    <h3>Num. director</h3>
+    <p>Lic. Ana María Ruiz Tel: (504) 9999-9999 </p>
+  </section>
+
+  <section class="seccion contenedor" id="SGaleria">
+    <h2 class="centrar-texto">Galería</h2>
+    <h3>Fotos de la Institución</h3>
+    <div class="contenedor gallery">
+      <img src="/img/enrique_1.jpg" alt="">
+      <img src="img/enrique_2.jpg" alt="">
+      <img src="img/enrique_3.jpg" alt="">
+      <img src="img/enrique_4.jpg" alt="">
+    </div>
+
+    <h3>Actividades realizadas</h3>
+    <div class="contenedor gallery">
+      <img src="/img/enriqueA_1.jpg" alt="">
+      <img src="/img/enriqueA_2.jpg" alt="">
+      <img src="/img/enriqueA_3.jpg" alt="">
+      <img src="/img/enriqueA_4.jpg" alt="">
+      <img src="/img/enriqueA_5.jpg" alt="">
+      <img src="/img/enriqueA_6.jpg" alt="">
+      <img src="/img/enriqueA_7.jpg" alt="">
+      <img src="/img/enriqueA_8.jpg" alt="">
+      <img src="/img/enriqueA_9.jpg" alt="">
+      <img src="/img/enriqueA_10.jpg" alt="">
+      <img src="/img/enriqueA_11.jpg" alt="">
+      <img src="/img/enriqueA_12.jpg" alt="">
+      <img src="/img/enriqueA_13.jpg" alt="">
+      <img src="/img/enriqueA_14.jpg" alt="">
+      <img src="/img/enriqueA_15.jpg" alt="">
+      <img src="/img/enriqueA_16.jpg" alt="">
+    </div>
+  </section>
+</main>
+`;
+
+var info3 = `
+<h1 class="centrar-texto">C.E.B 'Dr. Modesto Rodas Alvarado'</h1>
+<img src="/img/modesto7.webp" alt="" class="full-img">
+<main class="seccion contenedor">
+  <h3>Aldea Piedra De Amolar, Santa Fe, Ocotepeque, Honduras</h3>
+  <h2 class="centrar-texto indice">Índice</h2>
+  <ul class="space-B">
+    <li><a href="#SMision" class="fw700">Visión y Misión</a></li>
+    <li><a href="#SHistoria" class="fw700">Historia</a></li>
+    <li><a href="#SInfo" class="fw700">Acerca de Nosotros</a></li>
+  </ul>
+  <br><br>
+  <ul class="space-E">
+    <li><a href="#SMaestros" class="fw700">Maestros</a></li>
+    <li><a href="#SGaleria" class="fw700">Galería</a></li>
+  </ul>
+
+  <section class="space-B seccion contenedor" id="SMision">
+    <div>
+      <h2>VISIÓN</h2>
+      <p>Los alumnos con capacidad de desenvolverse en la sociedad, preparados para el desempeño del trabajo que les corresponde, a través de la implementación de la tecnología moderna y las transformaciones físicas del centro.</p>
+    </div>
+    <div>
+      <h2>MISIÓN</h2>
+      <p>El Centro de Educación Básica Dr. Modesto Rodas Alvarado es una institución educativa al servicio de la comunidad y de nuestro país, formando educandos deseosos del cambio hacia el desarrollo para mejorar su futuro, aprovechando las experiencias, habilidades y destrezas, y considerando los recursos disponibles para crear individuos útiles a la sociedad.</p>
+    </div>
+  </section>
+
+  <section class="seccion contenedor" id="SHistoria">
+    <h2 class="centrar-texto">Historia</h2>
+    <p>El C.E.B. Dr. Modesto Rodas Alvarado está ubicado en la aldea de Piedra de Amolar, en el municipio de Santa Fe, departamento de Ocotepeque, urbano y fronterizo con la república de Guatemala.<br><br>
+      Fundado en 1985 por el departamento Prof. Erasmo Portillo, la primera maestra fue Prof. Suyapa del Carmen Coto, quien junto con las organizaciones comunitarias construyó un aula escolar en un terreno donado por don Tiburcio Rosa. La escuela contaba solo con grados de 1 a 5. Con el tiempo, se realizaron contribuciones para construir un aula más, que inicialmente funcionó como dormitorio para la maestra, y se demolió al construirse un aula de bloque por el FHIS. Actualmente, el centro cuenta con dos aulas más.
+    </p>
+  </section>
+
+  <section class="seccion contenedor" id="SInfo">
+    <h2 class="centrar-texto">Acerca de Nosotros</h2>
+    <p>El Centro Educativo Básico 'Dr. Modesto Rodas Alvarado' está ubicado al lado izquierdo de la carretera que conduce a la aldea de El Mojanal, en la entrada de la comunidad. Cuenta con cinco docentes y una matrícula de 46 alumnos, con 4 aulas, 1 pila y servicios sanitarios para niñas y niños, además de agua potable. El centro educativo no reúne las condiciones pedagógicas mínimas para un mejor desarrollo, y su objetivo es inculcar en sus educandos los procesos de enseñanza-aprendizaje integrados a los padres de familia, alumnos y comunidad en general, conscientes de sus deberes y derechos como seres humanos y ciudadanos con valores éticos, morales y espirituales, cumpliendo así con todas sus metas propuestas.
+    </p>
+  </section>
+
+  <section class="seccion contenedor" id="SMaestros">
+    <h3>Maestros</h3>
+    <div class="contenedor">
+      <div class="p-space-B">
+        <h4>Celvin Chinchilla</h4>
+        <p>Director</p>
+      </div>
+    </div>
+    <h3>Num. Director</h3>
+    <p>Lic. Celvin Chinchilla. Cel: +504 9559-0406</p>
+    <br>
+    <p>Estaremos encantados de responder cualquier pregunta o inquietud. Llámanos o visítanos, será un placer atenderte. Las matrículas comienzan en enero del 2025.</p>
+    <h3>Horarios</h3>
+    <p>Lunes - Viernes</p>
+    <p>7:00 am - 12:00 pm</p>
+  </section>
+
+  <section class="seccion contenedor" id="SGaleria">
+    <h2 class="centrar-texto">Galería</h2>
+    <div class="contenedor gallery">
+      <img src="/img/modesto1.webp" alt="">
+      <img src="img/modesto2.webp" alt="">
+      <img src="img/modesto3.webp" alt="">
+      <img src="img/modesto4.webp" alt="">
+      <img src="img/modesto5.webp" alt="">
+      <img src="/img/modesto6.webp" alt="">
+      <img src="img/modesto7.webp" alt="">
+    </div>
+  </section>
+</main>
+`;
+var info4 = `
+<h1 class="centrar-texto">C.E.B.G 'Manuel Bonilla'</h1>
+<img src="/img/bonilla8.webp" alt="" class="full-img">
+<main class="seccion contenedor">
+  <h3>Aldea del El Mojanal, Santa Fe, Ocotepeque, Honduras</h3>
+  <h2 class="centrar-texto indice">Índice</h2>
+  <ul class="space-B">
+    <li><a href="#SMision" class="fw700">Visión y Misión</a></li>
+    <li><a href="#SHistoria" class="fw700">Historia</a></li>
+    <li><a href="#SInfo" class="fw700">Acerca de nosotros</a></li>
+  </ul>
+  <br><br>
+  <ul class="space-E">
+    <li><a href="#SMaestros" class="fw700">Maestros</a></li>
+    <li><a href="#SGaleria" class="fw700">Galería</a></li>
+  </ul>
+
+  <section class="space-B seccion contenedor" id="SMision">
+    <div>
+      <h2>VISIÓN</h2>
+      <p>Al año 2024 el C.E.B.G 'Manuel Bonilla' será una institución con liderazgo, que responda a las demandas educativas de la población hondureña, garantizando el derecho a una educación inclusiva, equitativa y de calidad.</p>
+    </div>
+    <div>
+      <h2>MISIÓN</h2>
+      <p>Ejecutar la política Educativa Nacional en el nivel de básica mediante el acceso, permanencia y promoción inclusiva y equitativa de calidad para formar ciudadanos y ciudadanas que contribuyan al desarrollo sostenible de Honduras.</p>
+    </div>
+  </section>
+
+  <section class="seccion contenedor" id="SHistoria">
+    <h2 class="centrar-texto">Historia</h2>
+    <p>Como parte del sistema educativo de nuestro país, la Escuela Primaria 'Manuel Bonilla' se ha convertido en una institución emblemática en nuestra comunidad. Desde su fundación en 1942 ha sido un lugar de aprendizaje y formación para generaciones de niños y niñas, contribuyendo de manera significativa en su desarrollo personal y académico.<br><br></p>
+  </section>
+
+  <section class="seccion contenedor" id="SInfo">
+    <h2 class="centrar-texto">Acerca de nosotros</h2>
+  </section>
+
+  <section class="seccion contenedor" id="SMaestros">
+    <h3>Maestros</h3>
+    <div class="contenedor">
+      <div class="p-space-B">
+        <h4>Claudia Ortiz</h4>
+        <p>Directora</p>
+      </div>
+    </div>
+    <h3>Num. Director</h3>
+    <p>Licda. Claudia Ortiz. Cel: +504 9944-2468</p>
+    <br>
+    <p>Estaremos encantados de responder cualquier pregunta o inquietud. Llámanos o visítanos, será un placer atenderte. Las matrículas comienzan en enero del 2025.<br><br></p>
+    <h3>Horarios</h3>
+    <p>Lunes - Viernes</p>
+    <p>7:00 am - 12:00 pm</p>
+  </section>
+
+  <section class="seccion contenedor" id="SGaleria">
+    <h2 class="centrar-texto">Galería</h2>
+    <div class="contenedor gallery">
+      <img src="/img/bonilla1.webp" alt="">
+      <img src="img/bonilla2.webp" alt="">
+      <img src="img/bonilla3.webp" alt="">
+      <img src="img/bonilla4.webp" alt="">
+      <img src="img/bonilla5.webp" alt="">
+      <img src="/img/bonilla6.webp" alt="">
+      <img src="img/bonilla7.webp" alt="">
+      <img src="img/bonilla8.webp" alt="">
+    </div>
+  </section>
+</main>
+`;
+
+
+var info5 = `
+<h1 class="centrar-texto">C.E.B 'José Trinidad Reyes'</h1>
+<img src="/img/trinidad2.webp" alt="" class="full-img">
+<main class="seccion contenedor">
+  <h3>Aldea la Quesera, Santa Fe, Ocotepeque.</h3>
+  <h2 class="centrar-texto indice">Índice</h2>
+  <ul class="space-B">
+    <li><a href="#SMision" class="fw700">Visión y Misión</a></li>
+    <li><a href="#SHistoria" class="fw700">Historia</a></li>
+    <li><a href="#SInfo" class="fw700">Acerca de nosotros</a></li>
+  </ul>
+  <br><br>
+  <ul class="space-E">
+    <li><a href="#SMaestros" class="fw700">Maestros</a></li>
+    <li><a href="#SGaleria" class="fw700">Galería</a></li>
+  </ul>
+
+  <section class="space-B seccion contenedor" id="SMision">
+    <div>
+      <h2>VISIÓN</h2>
+      <p>Somos una institución que brinde Educación de calidad con Docentes altamente capacitados, con una infraestructura adecuada para las necesidades locales y una organización fortalecida; que egresen alumnos con preparación académica para continuar sus estudios superiores, mismo que pueda aplicar en la vida diaria.</p>
+    </div>
+    <div>
+      <h2>MISIÓN</h2>
+      <p>Somos una institución que brinde Educación de calidad con Docentes altamente capacitados, con una infraestructura adecuada para las necesidades locales y una organización fortalecida; que egresen alumnos con preparación académica para continuar sus estudios superiores, mismo que pueda aplicar en la vida diaria.</p>
+    </div>
+  </section>
+
+  <section class="seccion contenedor" id="SHistoria">
+    <h2 class="centrar-texto">Historia</h2>
+    <p>El centro educativo José Trinidad Reyes, de la aldea la Quesera, Santa Fe, Ocotepeque, fue fundada en el año de 1978, debido a la necesidad de tener un centro educativo en esta zona, se pusieron de acuerdo todos los habitantes de las comunidades cercanas y reunieron 30 alumnos. Su construcción está elaborada de 3 aulas. Actualmente cuenta con una matrícula de 56 estudiantes.<br><br></p>
+  </section>
+
+  <section class="seccion contenedor" id="SInfo">
+    <h2 class="centrar-texto">Acerca de nosotros</h2>
+    <h3>Diagnóstico Situacional</h3>
+    <p>Según la ley fundamental de educación desde el año 1998 todos los centros educativos que brindan atención en el 1, 2 y 3 ciclo pasan a ser centros de educación básica. Se encuentra ubicado en la aldea la Quesera, Santa Fe.<br><br></p>
+    <h3>Indicadores Educativos</h3>
+    <img src="img/trinidad_indicador.webp" alt="">
+    <h3>FODA</h3>
+    <img src="img/trinidad_FODA.webp" alt="">
+    <h3>Principios de Gestión</h3>
+    <p>La gestión del C.E.B 'JOSE TRINIDAD REYES', se fundamentará en los siguientes principios:<br><br> 
+      HONESTIDAD: Hace referencia a la persona siempre integra y recta, alguien que cumple con sus deberes sin fraudes, engaños y trampas; ser recto es ser transparente, auténtico y de buena fe.<br><br>
+      RESPONSABILIDAD: En sentido práctico es escoger la respuesta correcta; hacer de la mejor manera lo que corresponde con efectividad, calidad y compromiso, y sin perder de vista el beneficio colectivo. Implica asumir la consecuencia social de los actos y responder por las decisiones que tomen los grupos de los que se forma parte.<br><br>
+      TRANSPARENCIA: Cada actividad debe de ser desarrollada con transparencia ya que contribuye a la buena administración de los recursos y propicia el empoderamiento de la sociedad en las gestiones de los administradores de la educación, y por ende, de los centros educativos. Ser honesto con uno mismo y con los demás. Es un valor fundamental para trabajar en equipo.<br><br>
+      RESPETO: Es tratar humanamente a las personas, reconocer que el otro es real y semejante pero a la vez diferente. Respetar es ponerse en lugar del otro para comprenderlo. 'Formación académica de calidad y en valores para el desempeño en sociedad' respeto excluye el maltrato, la discriminación, la agresión, la humillación, la indiferencia y el desconocimiento de cualquier persona.<br><br>
+      JUSTICIA: Este valor va más allá de la ley y del dar a cada uno lo que le pertenece. Entraña el reconocimiento del otro 'como igual a uno mismo'. Es así como cobra todo su sentido. Las personas encargadas de la educación de la institución deben de mostrar justicia frente a cualquier situación que se presente, sin hacer diferencia entre los implicados.<br><br>
+      AGRADECIMIENTO: La gratitud es uno de los valores más apreciados y respetados. El aprender a dar las gracias o agradecer aporta bienestar y reconocimiento a las personas. Como todos los demás valores, se enseña a dar las gracias con el ejemplo, modelando para los niños nuestras propias acciones de agradecer.<br><br>
+      SOLIDARIDAD: Es la capacidad que permite reconocer a cada quien su dignidad y valor individual como persona. La solidaridad parte de la premisa: 'mi desarrollo como persona no es posible sin la presencia, el apoyo, el afecto y la ayuda a los demás'. El pluralismo y la aceptación (como superación de la tolerancia) son las bases imprescindibles para que surja la solidaridad sobre la base del respeto.<br><br>
+      BONDAD: La bondad es una de las cualidades humanas que mejor reflejan la esencia humana, pues la persona bondadosa es buena, benigna y benévola, y a veces se la relaciona con la amabilidad. Tiene inclinación por hacer el bien a los demás, y lo hace con afecto, comprensión y respeto.<br><br>
+      ESTUDIO: Cuando se habla de hábitos de estudio, se refiere a las conductas que se llevan a cabo en todas las fases del estudio: en las clases y en el trabajo en casa. Una conducta que se repite, se establece como hábito y en ese momento, realizarla nos supone un esfuerzo menor. Ese tiene que ser el objetivo: establecer conductas de forma permanente.<br><br>
+      TRABAJO: Este trata de realizar y comprender las virtudes y valores humanos del trabajo, preparándoles para el futuro, cuando tengan que trabajar en los estudios, en la empresa o en la sociedad.<br><br>
+      PUNTUALIDAD: La puntualidad es el cuidado y diligencia en hacer las cosas a su debido tiempo. Sin duda, una virtud que en el mundo en el que vivimos se convierte en una obligación. Por eso se le debe de dar valor de cara a los niños, educarlos en la puntualidad significará un compromiso para ellos en realizar las tareas a tiempo.<br><br>
+    </p>
+  </section>
+
+  <section class="seccion contenedor" id="SMaestros">
+    <h3>Maestros</h3>
+    <div class="space-B contenedor">
+      <div class="p-space-B">
+        <h4>Denia Yaneth Vargas</h4>
+        <p>Primero, Segundo y Sexto</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Leidy Patricia Arita Barraza</h4>
+        <p>Directora, Maestra de Tercero, Cuarto y Quinto</p>
+      </div>
+      <div class="p-space-B">
+        <h4>Diana Morataya</h4>
+        <p>Séptimo, Octavo y Noveno</p>
+      </div>
+    </div>
+    <h3>Num. Director</h3>
+    <p>Licda. Leidy Patricia Arita Barraza. Cel: +504 9731-2984</p>
+    <br>
+    <p>Estaremos encantados de responder cualquier pregunta o inquietud. Llámanos o visítanos, será un placer atenderte. Las matrículas comienzan en enero del 2025.</p>
+    <h3>Horarios</h3>
+    <p>Lunes - Viernes</p>
+    <p>7:00 am - 12:00 pm</p>
+  </section>
+
+  <section class="seccion contenedor" id="SGaleria">
+    <h2 class="centrar-texto">Galería</h2>
+    <div class="contenedor gallery">
+      <img src="/img/trinidad1.webp" alt="">
+      <img src="img/trinidad2.webp" alt="">
+      <img src="img/trinidad3.webp" alt="">
+      <img src="img/trinidad4.webp" alt="">
+      <img src="img/trinidad5.webp" alt="">
+      <img src="/img/trinidad6.webp" alt="">
+      <img src="img/trinidad7.webp" alt="">
+      <img src="img/trinidad8.webp" alt="">
+    </div>
+  </section>
+</main>
+`;
+
+
+
+    var infoData = {
+        "info1": info1,
+        "info2": info2,
+        "info3": info3,
+        "info4": info4,
+        "info5": info5,
+    };
+
+    if (infoData[infoKey]) {
+        infoSection.innerHTML = infoData[infoKey];
+    } else {
+        infoSection.innerHTML = "<p>No se encontró la información.</p>";
+    }
+};
+
+</script>
+</html>
